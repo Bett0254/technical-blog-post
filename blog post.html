@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A practical demonstration of semantic HTML for SEO and accessibility." />
+  <title>Semantic HTML</title>
+  </head>  
+  <body>
+    <header>
+    <link rel="stylesheet" href="styles.css">
+    <h1>Semantic HTML Blog</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/articles">Articles</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+    <article aria-labelledby="article-title">
+      <h2 id="article-title">Why Semantic HTML Matters</h2>
+      <section>
+        <h3>Improves SEO</h3>
+        <p>Semantic HTML allows search engines to better understand your content structure and relevance.</p>
+      </section>
+      <section>
+        <h3>Enhances Accessibility</h3>
+        <p>Using landmarks like <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;nav&gt;</code> helps screen readers navigate content more effectively.</p>
+      </section>
+    </article>
+
+    <aside aria-label="Related Information">
+      <h4>Related Tips</h4>
+      <ul>
+        <li><a href="#">How to Test Accessibility</a></li>
+        <li><a href="#">Lighthouse SEO Guide</a></li>
+        <li><a href="#">ARIA Roles vs Native Elements</a></li>
+      </ul>
+    </aside>
+    </main>
+    <footer>
+    <p>&copy;Technical blog post. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
